@@ -7,9 +7,21 @@ while True:
         valor = input("escolha um valor ")
         Carrinho.append(valor)
 
-    elif opcao=="l":
-        for i,valor in enumerate(Carrinho):
-            print(i,valor)
-        
+    elif opcao == "a":
+        apagar = input("escolha indice para apagar ")
+        try:
+            indice = int(apagar)
+            del Carrinho[indice]
+        except ValueError:
+            print("porfavor digite numero int")
 
-"""del"""
+    elif opcao == "l":
+        for i, valor in enumerate(Carrinho):
+
+            print(i, valor)
+
+
+""" precisei de ajuda pra inserir no append , não consegui fazer delete , lista olhei antigo exercicio"""
+"""
+Exercicio de Listagem para adicionar,apagar,listar
+"""
